@@ -1,0 +1,42 @@
+{
+  "name": "loopback-connector-notify",
+  "version": "0.0.1",
+  "description": "The official Notify connector for the LoopBack framework.",
+  "main": "index.js",
+  "scripts": {
+    "benchmarks": "make benchmarks",
+    "leak-detection": "make leak-detection",
+    "test": "mocha -G --timeout 10000 test/*.test.js",
+    "lint": "eslint .",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sqlwwx/loopback-connector-notify.git"
+  },
+  "keywords": [
+    "connector",
+    "datasource",
+    "loopback",
+    "strongloop"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "loopback-connector": "^2.2.0",
+    "async": "^1.0.0",
+    "debug": "^2.1.1"
+  },
+  "devDependencies": {
+    "benchmark": "^1.0.0",
+    "bluebird": "^2.9.12",
+    "eslint": "^2.7.0",
+    "eslint-config-loopback": "^1.0.0",
+    "loopback-datasource-juggler": "^2.28.0",
+    "memwatch-next": "^0.2.6",
+    "mocha": "^2.1.0",
+    "rc": "^1.0.0",
+    "semver": "^4.2.0",
+    "should": "^8.0.2",
+    "sinon": "^1.15.4"
+  }
+}
